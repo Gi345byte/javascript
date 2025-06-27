@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /// parameter is name when function is defining
+        // & while arguments are called when function is called.
+
+        function show(x){
+                return function(y){
+                    return x+y
+                }
+            };
+            console.log(show(10));
+            a= show(10);
+            console.log(a(10));
+
+        
+    </script>
+</body>
+</html>

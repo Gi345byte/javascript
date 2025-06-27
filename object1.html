@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let food={
+            name:'snacks',
+            price:'30',
+            'store name':'guru krupa',
+            availability:'yes',
+            variety:function(){
+                return 'all variety are avialabke'
+            }
+        }
+
+        // to acess key of space b/w it we use square [] brackets
+        console.log(food['store name']);
+
+        // function acces through normal method 
+
+        console.log(food.variety()); // function access in object
+        console.log(food);
+        // delete and update method in object 
+
+        console.log(food.name='junk food');
+        console.log(food.name);
+
+        // delete method
+        console.log(delete food.name);
+        console.log(food);
+
+        // creating new key in object after creation of object
+        console.log(food.id='heloo');
+        console.log(food);
+
+/// object creation 
+        let avenger = {
+            f_name:'steve', l_name:'Roger','heroic name':'Captain america',power:function(){
+                return 'Hello My name is captain america.'
+            }
+        }
+
+        console.log(avenger);
+        console.log(avenger.l_name);
+        console.log(avenger['heroic name']);
+
+        // 
+
+    </script>
+</body>
+</html>
