@@ -8,13 +8,33 @@
 <body>
     <script>
         async function mission(){
-            let nm=await avenger('steve');
+            let nm= await avenger('steve');
             console.log(nm)
 
             let hn=await heroic_name(nm)
-            hn='Red Skull'
+            console.log(hn)
+             if(hn=='steve'){
+                console.log('her is hero')
+                hn='Red skull'
+             }
+             else{
+                console.log('he is not a hero')
+               
+             }
+
+             let en=await enemy(hn)
+             if(en=='Red skull'){
+                console.log('meet me in vlomir')
+                
+             }
+             else{
+                console.log('no enemy')
+             }
+
             
         }
+
+        mission();
     </script>
 </body>
 </html>

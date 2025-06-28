@@ -1,0 +1,46 @@
+.container{
+    background-image:url('images.jpg');
+    align-content:center;
+    justify-content:end ;
+    height: 300px;
+    width: 400px;
+    border: 2px solid ;
+    border-radius: 10px;
+    display: block;
+    padding-left: 100px;
+    margin:auto;
+    margin-top: 100px;
+    
+}
+h1{
+    color:floralwhite;
+    padding-left: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#display{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+#increase {
+    width:100px;
+    height: 30px;
+    border-radius: 8px;
+    padding-left: 5px;
+}
+
+#decrease {
+    width:100px;
+    height: 30px;
+    border-radius: 8px;
+    padding-left: 5px;
+}
+
+#reset {
+    width:100px;
+    height: 30px;
+    border-radius: 8px;
+    padding-left: 5px;
+}

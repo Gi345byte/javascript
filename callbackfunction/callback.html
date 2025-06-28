@@ -1,71 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
 
         // callback function  
-        // function shield(callback){
-            
-        //     return callback();
-        // }
+        function shield(callback) {
 
-        // shield(()=>{console.log('hello')});
+            return callback();
+        }
 
-
-        // console.log('start');
-        // setTimeout(()=>{console.log('hello')},2000); // settimeout only print only once 
-        // console.log("end");
+        shield(() => { console.log('hello') });
 
 
-  /// setINterval
-
-        // console.log('start');
-        // setInterval(()=>{console.log('hello')},2000); // setInterval print repeatdly after that given time
-        // console.log("end");
+        console.log('start');
+        setTimeout(() => { console.log('hello') }, 2000); // settimeout only print only once 
+        console.log("end");
 
 
+        setINterval
+
+        console.log('start');
+        setInterval(() => { console.log('hello') }, 2000); // setInterval print repeatdly after that given time
+        console.log("end");
 
 
-        // console.log('start');
-        // function avenger(name){
-        //     setTimeout(()=>{console.log("timeout function");
-        //     return name},2000)
-        // }
-        // let aven=avenger('steve');
-        // console.log(aven);
+
+
+        console.log('start');
+        function avenger(name) {
+            setTimeout(() => {
+                console.log("timeout function");
+                return name
+            }, 2000)
+        }
+        let aven = avenger('steve');
+        console.log(aven);
 
 
         // callback function
 
 
-        //  console.log('start');
-        // function avenger(name,callback){
-        //     setTimeout(()=>{console.log("timeout function");
-        //     return callback(name)},2000)
-        // }
-        // avenger('steve',(an)=>{console.log(an)});
-        
-
-        // console.log('end')
-
-// console.log('start')
-//         function dc(callback){
-//             setTimeout(()=>{console.log("timeout")},2000);
-//             return callback(name);
-
-//         }
-//         dc((name)=>{console.log("steve")});
-// console.log('end');
+        console.log('start');
+        function avenger(name, callback) {
+            setTimeout(() => {
+                console.log("timeout function");
+                return callback(name)
+            }, 2000)
+        }
+        avenger('steve', (an) => { console.log(an) });
 
 
+        console.log('end')
 
- 
+        console.log('start')
+        function dc(callback) {
+            setTimeout(() => { console.log("timeout") }, 2000);
+            return callback(name);
+
+        }
+        dc((name) => { console.log("steve") });
+        console.log('end');
+
+
+
+
     </script>
 
 </body>
+
 </html>

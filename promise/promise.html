@@ -25,63 +25,63 @@
 
 
 
-        // function avenger(name) {
-        //     return new Promise((resolve, reject) => {
-        //         setTimeout(() => {
-        //             console.log('inside avenger function')
-        //             resolve(name)
-        //         }, 2000)
-        //     }
+        function avenger(name) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    console.log('inside avenger function')
+                    resolve(name)
+                }, 2000)
+            })
 
-        // }
+        }
 
-        // function heroic_name(hn) {
-        //     return new Promise((resolve, reject) => {
-        //         setTimeout(() => {
-        //             cosnole.log('inside heroic function');
-        //             resolve(hn)
-        //         }, 2000)
+        function heroic_name(hn) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    console.log('inside heroic function');
+                    resolve(hn)
+                }, 2000)
 
-        //     }
-        // }
+            })
+        }
 
-        // function enemy(en) {
-        //     return new Promise((resolve, reject) => {
-        //         setTimeout(() => {
-        //             console.log('inside enmy function');
-        //             resolve(en)
-        //         }, 2000)
-        //     }
-        // }
+        function enemy(en) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    console.log('inside enmy function');
+                    resolve(en)
+                }, 2000)
+            })
+        }
 
 
-        // avenger('steve').then(
-        //     (hn)=>{
-        //         console.log(hn)
-        //         return heroic_name(hn)
-        //     }
-        // ).then(
-        //     (hn)=>{
-        //         if(hn=='steve'){
-        //             console.log('he is hero')
-        //             hn=='Red skull'
-        //         }
-        //         else{
-        //             console.log('he is not hero')
-        //         }
-        //         return enemy(hn)
-        //     }
-        // ).then(
-        //     (en)=>{
-        //         if(en=='Red skull'){
-        //             console.log('Meet me on vlomir')
+        avenger('steve').then(
+            (hn)=>{
+                console.log(hn)
+                return heroic_name(hn)
+            }
+        ).then(
+            (hn)=>{
+                if(hn=='steve'){
+                    console.log('he is hero')
+                    hn=='Red skull'
+                }
+                else{
+                    console.log('he is not hero')
+                }
+                return enemy(hn)
+            }
+        ).then(
+            (en)=>{
+                if(en=='Red skull'){
+                    console.log('Meet me on vlomir')
                     
-        //         }
-        //         else{
-        //             console.log('no enemy')
-        //         }
-        //     }
-        // )
+                }
+                else{
+                    console.log('no enemy')
+                }
+            }
+        )
 
 
 
