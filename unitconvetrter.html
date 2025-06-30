@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="head">
+            <h1>Unit Converter</h1>
+        </div>
+        <div class="operation">
+            <input type="number" id="display" value="0"><br>
+            <input type="radio" name="Convertor" id="m_to_cm">
+            <label for="m_to_cm">Meter->Centimeter</label><br>
+            <input type="radio" name="Convertor" id="km_to_m">
+            <label for="km_to_m">Kilomeeter -> Meter</label><br>
+            <input type="radio" name="Convertor" id="mile_to_km">
+            <label for="mile_to_km">mile -> km</label><br>
+            <button type="button" onclick="convert()">convert</button>
+        </div>
+        <div class="result">
+            <h1 id="res">Enter positive value</h1>
+
+        </div>
+          
+    </div>
+
+    
+
+
+    <script>
+        var display=document.getElementById('display');
+        var m_to_cm=document.getElementById('m_to_cm');
+        var km_to_m=document.getElementById('km_to_m');
+        var mile_to_km=document.getElementById('mile_to_km');
+        var result=document.getElementById('res')
+        
+        function convert(){
+            
+            if(display.value>0){
+                if(m_to_cm.checked){
+                    let con=display.value*100;
+                    result.textContent=`${display.value} m = ${con} cm`
+
+                }
+                else if(km_to_m.checked){
+                    let con=display.value*1000;
+                    result.textContent=`${display.value} km = ${con} m `
+                }
+                else if(mile_to_km.checked){
+                    let con=display.value*1.6
+                    result.textContent=`${display.value} mile = ${con} km `
+                }
+                else{
+                    result.textContent='enter positive value';
+                }
+            }
+
+        }
+        
+    </script>
+</body>
+</html>
