@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>Convert Currency</h1>
+        <input type="number" id="display" value="">
+        <select id="From">
+            <option value="USD">USD</option>
+            <option value="INR">INR</option>
+            <option value="AED">AED</option>
+        </select>
+        <select id="To">
+            <option value="INR">INR</option>
+            <option value="USD">USD</option>
+            <option value="AED">AED</option>
+        </select>
+
+        <button type="button" onclick="convert()">Convert</button>
+
+        <div id="result">
+            <h1 id="res">Result</h1>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
